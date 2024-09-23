@@ -1,0 +1,156 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* About Us */
+.hero {
+    position: relative;
+    background-image: url("../assets/Banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 20px;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black overlay */
+    z-index: 2;
+  }
+  
+  .hero .container {
+    position: relative;
+    padding-top: 15%;
+    z-index: 3; /* Ensure the text is above the overlay */
+  }
+  
+  .hero h1 {
+    color: #fff;
+    font-size: 40px;
+    z-index: 3;
+   margin-left: 200px;
+   margin-right: 200px;
+  }
+  
+  .hero p {
+    text-align: center;
+    color: #fff;
+    opacity: 0.8;
+    z-index: 3;
+   margin-left: 200px;
+   font-size: 15px;
+   margin-right: 200px;
+   margin-bottom: 200px;
+   word-wrap: break-word;
+  }
+  /* Back Section*/
+  .back {
+    font-family: 'Poppins';
+    font-weight: 100;
+  }
+  /* About Us Section */
+.about {
+
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .about .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about .heading {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .about .left {
+    margin-left: 150px;
+    padding-right: 20px;
+  }
+  
+  .about .right {
+    flex: 1;
+  }
+  
+  .about .heading h1 {
+    margin-left: 60p;
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .about .heading p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size:  15px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about button.btn2 {
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about button.btn2:hover {
+    background-color: #0056b3;
+  }
+  
+  .about .right img {
+    margin-right: 150px;
+    margin-top: 70px;
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .about .container {
+      flex-direction: column;
+    }
+  
+    .about .left, .about .right {
+      padding: 0;
+      width: 100%;
+    }
+  
+    .about .right img {
+      margin-top: 20px;
+      height: auto;
+      width: 100%;
+    }
+  }
+  
+  
+  
+
+  
